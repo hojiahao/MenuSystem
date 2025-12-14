@@ -284,6 +284,7 @@
 /I "Editor/SceneDepthPickerMode/Public"
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/AnimationEditMode/UHT"
 /I "Editor/AnimationEditMode/Public"
+/I "D:/Unreal Projects/MenuSystem/Plugins/MultiplayerSessions/Intermediate/Build/Win64/UnrealEditor/Inc/MultiplayerSessions/UHT"
 /I "D:/Unreal Projects/MenuSystem/Plugins/MultiplayerSessions/Source"
 /I "D:/Unreal Projects/MenuSystem/Plugins/MultiplayerSessions/Source/MultiplayerSessions/Public"
 /I "../Plugins/Online/OnlineSubsystem/Intermediate/Build/Win64/UnrealEditor/Inc/OnlineSubsystem/UHT"
