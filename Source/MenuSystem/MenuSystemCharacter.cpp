@@ -138,7 +138,7 @@ void AMenuSystemCharacter::DoJumpEnd()
 
 void AMenuSystemCharacter::CreateGameSession()
 {
-	// Called when player pressing keyboard button to create a session
+	// Called when player pressing keyboard 1 to create a session
 	if (!OnlineSessionInterface.IsValid())
 	{
 		return;
@@ -149,31 +149,28 @@ void AMenuSystemCharacter::CreateGameSession()
 	{
 		OnlineSessionInterface->DestroySession(NAME_GameSession);
 	}
-	else
-	{
-		// 创建会话设置
-		OnlineSessionInterface->AddOnCreateSessionCompleteDelegate_Handle(CreateSessionCompleteDelegate);
-			
-		// 配置会话属性
-		TSharedPtr<FOnlineSessionSettings> SessionSettings = MakeShareable(new FOnlineSessionSettings());
-		SessionSettings->bIsLANMatch = false;	// // 不是局域网游戏
-		SessionSettings->NumPublicConnections = 4;	// 设置会话允许的最大玩家数量（不包括主机）
-		SessionSettings->bAllowJoinInProgress = true;	// 允许游戏进行中加入
+	// 创建会话设置
+	OnlineSessionInterface->AddOnCreateSessionCompleteDelegate_Handle(CreateSessionCompleteDelegate);
 
-		SessionSettings->bAllowJoinViaPresence = true;	// 允许通过好友状态加入
-		SessionSettings->bShouldAdvertise = true;	// 广告此会话（让其他人能搜索到）
-		SessionSettings->bUsesPresence = true;	// 使用状态系统
-		SessionSettings->bUseLobbiesIfAvailable = true; // 如果可用，使用大厅功能
-		SessionSettings->Set(FName("MatchType"), FString("FreeForAll"), EOnlineDataAdvertisementType::ViaOnlineServiceAndPing); // 自定义会话属性
+	// 配置会话属性
+	TSharedPtr<FOnlineSessionSettings> SessionSettings = MakeShareable(new FOnlineSessionSettings());
+	SessionSettings->bIsLANMatch = false;	// // 不是局域网游戏
+	SessionSettings->NumPublicConnections = 4;	// 设置会话允许的最大玩家数量（不包括主机）
+	SessionSettings->bAllowJoinInProgress = true;	// 允许游戏进行中加入
 
-		const ULocalPlayer* LocalPlayer = GetWorld()->GetFirstLocalPlayerFromController();
-		OnlineSessionInterface->CreateSession(*LocalPlayer->GetPreferredUniqueNetId(), NAME_GameSession, *SessionSettings);
-	}
+	SessionSettings->bAllowJoinViaPresence = true;	// 允许通过好友状态加入
+	SessionSettings->bShouldAdvertise = true;	// 广告此会话（让其他人能搜索到）
+	SessionSettings->bUsesPresence = true;	// 使用状态系统
+	SessionSettings->bUseLobbiesIfAvailable = true; // 如果可用，使用大厅功能
+	SessionSettings->Set(FName("MatchType"), FString("FreeForAll"), EOnlineDataAdvertisementType::ViaOnlineServiceAndPing); // 自定义会话属性
+
+	const ULocalPlayer* LocalPlayer = GetWorld()->GetFirstLocalPlayerFromController();
+	OnlineSessionInterface->CreateSession(*LocalPlayer->GetPreferredUniqueNetId(), NAME_GameSession, *SessionSettings);
 }
 
 void AMenuSystemCharacter::JoinGameSession()
 {
-	// Find game session to join
+	// Find a game session to join
 	if (!OnlineSessionInterface.IsValid())
 	{
 		return;
