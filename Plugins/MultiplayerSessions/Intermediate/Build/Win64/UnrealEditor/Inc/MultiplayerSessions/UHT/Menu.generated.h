@@ -18,6 +18,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UMenu ********************************************************************
 #define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execJoinButtonClicked); \
+	DECLARE_FUNCTION(execHostButtonClicked); \
 	DECLARE_FUNCTION(execMenuSetup);
 
 

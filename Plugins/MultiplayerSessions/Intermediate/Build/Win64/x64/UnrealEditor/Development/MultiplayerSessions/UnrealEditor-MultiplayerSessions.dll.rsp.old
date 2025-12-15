@@ -38,7 +38,6 @@
 /NOEXP
 "D:/Unreal Projects/MenuSystem/Intermediate/Build/Win64/x64/MenuSystemEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
 "D:/Unreal Projects/MenuSystem/Plugins/MultiplayerSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerSessions/Module.MultiplayerSessions.cpp.obj"
-"D:/Unreal Projects/MenuSystem/Plugins/MultiplayerSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerSessions/Menu.cpp.obj"
 "D:/Unreal Projects/MenuSystem/Plugins/MultiplayerSessions/Intermediate/Build/Win64/x64/UnrealEditor/Development/MultiplayerSessions/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Engine/UnrealEditor-Engine.lib"
@@ -47,6 +46,7 @@
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Core/UnrealEditor-Core.lib"
 "../Plugins/Online/OnlineSubsystem/Intermediate/Build/Win64/x64/UnrealEditor/Development/OnlineSubsystem/UnrealEditor-OnlineSubsystem.lib"
 "../Plugins/Online/OnlineSubsystemSteam/Intermediate/Build/Win64/x64/UnrealEditor/Development/OnlineSubsystemSteam/UnrealEditor-OnlineSubsystemSteam.lib"
+"../Intermediate/Build/Win64/x64/UnrealEditor/Development/UMG/UnrealEditor-UMG.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
