@@ -23,11 +23,25 @@ MULTIPLAYERSESSIONS_API void FMultiplayerOnCreateSessionComplete_DelegateWrapper
 
 // ********** End Delegate FMultiplayerOnCreateSessionComplete *************************************
 
+// ********** Begin Delegate FMultiplayerOnDestroySessionComplete **********************************
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_16_DELEGATE \
+MULTIPLAYERSESSIONS_API void FMultiplayerOnDestroySessionComplete_DelegateWrapper(const FMulticastScriptDelegate& MultiplayerOnDestroySessionComplete, bool bWasSuccessful);
+
+
+// ********** End Delegate FMultiplayerOnDestroySessionComplete ************************************
+
+// ********** Begin Delegate FMultiplayerOnStartSessionComplete ************************************
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_17_DELEGATE \
+MULTIPLAYERSESSIONS_API void FMultiplayerOnStartSessionComplete_DelegateWrapper(const FMulticastScriptDelegate& MultiplayerOnStartSessionComplete, bool bWasSuccessful);
+
+
+// ********** End Delegate FMultiplayerOnStartSessionComplete **************************************
+
 // ********** Begin Class UMultiplayerSessionsSubsystem ********************************************
 struct Z_Construct_UClass_UMultiplayerSessionsSubsystem_Statics;
 MULTIPLAYERSESSIONS_API UClass* Z_Construct_UClass_UMultiplayerSessionsSubsystem_NoRegister();
 
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMultiplayerSessionsSubsystem(); \
 	friend struct ::Z_Construct_UClass_UMultiplayerSessionsSubsystem_Statics; \
@@ -38,7 +52,7 @@ public: \
 	DECLARE_SERIALIZER(UMultiplayerSessionsSubsystem)
 
 
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_25_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMultiplayerSessionsSubsystem(UMultiplayerSessionsSubsystem&&) = delete; \
 	UMultiplayerSessionsSubsystem(const UMultiplayerSessionsSubsystem&) = delete; \
@@ -48,12 +62,12 @@ public: \
 	NO_API virtual ~UMultiplayerSessionsSubsystem();
 
 
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_18_PROLOG
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_21_GENERATED_BODY \
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_22_PROLOG
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_21_INCLASS_NO_PURE_DECLS \
-	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_21_ENHANCED_CONSTRUCTORS \
+	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_25_INCLASS_NO_PURE_DECLS \
+	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_MultiplayerSessionsSubsystem_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

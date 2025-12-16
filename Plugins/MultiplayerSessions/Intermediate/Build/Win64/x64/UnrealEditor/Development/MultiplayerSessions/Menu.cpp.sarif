@@ -19,7 +19,7 @@
                                     "uri": "file:///D:/Unreal Projects/MenuSystem/Plugins/MultiplayerSessions/Source/MultiplayerSessions/Private/Menu.cpp"
                                 },
                                 "region": {
-                                    "startLine": 12,
+                                    "startLine": 13,
                                     "startColumn": 2,
                                     "snippet": {
                                         "text": "\tbIsFocusable = true;"

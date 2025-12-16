@@ -17,9 +17,11 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UMenu ********************************************************************
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execJoinButtonClicked); \
 	DECLARE_FUNCTION(execHostButtonClicked); \
+	DECLARE_FUNCTION(execOnStartSession); \
+	DECLARE_FUNCTION(execOnDestroySession); \
 	DECLARE_FUNCTION(execOnCreateSession); \
 	DECLARE_FUNCTION(execMenuSetup);
 
@@ -27,7 +29,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UMenu_Statics;
 MULTIPLAYERSESSIONS_API UClass* Z_Construct_UClass_UMenu_NoRegister();
 
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMenu(); \
 	friend struct ::Z_Construct_UClass_UMenu_Statics; \
@@ -38,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(UMenu)
 
 
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMenu(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -50,13 +52,13 @@ public: \
 	NO_API virtual ~UMenu();
 
 
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_12_PROLOG
-#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_15_GENERATED_BODY \
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_13_PROLOG
+#define FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_15_INCLASS_NO_PURE_DECLS \
-	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_15_ENHANCED_CONSTRUCTORS \
+	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_16_INCLASS_NO_PURE_DECLS \
+	FID_MenuSystem_Plugins_MultiplayerSessions_Source_MultiplayerSessions_Public_Menu_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
