@@ -15,7 +15,8 @@
             "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinekeyvaluepair.h",
             "d:\\unreal projects\\menusystem\\plugins\\multiplayersessions\\intermediate\\build\\win64\\unrealeditor\\inc\\multiplayersessions\\uht\\multiplayersessionssubsystem.generated.h",
             "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesubsystem.h",
-            "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesubsystemmodule.h"
+            "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesubsystemmodule.h",
+            "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesessionsettings.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
