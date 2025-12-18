@@ -99,7 +99,12 @@
             "d:\\unreal projects\\menusystem\\plugins\\multiplayersessions\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\multiplayersessions\\permoduleinline.gen.cpp",
             "e:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl",
             "d:\\unreal projects\\menusystem\\plugins\\multiplayersessions\\source\\multiplayersessions\\private\\multiplayersessions.cpp",
-            "d:\\unreal projects\\menusystem\\plugins\\multiplayersessions\\source\\multiplayersessions\\public\\multiplayersessions.h"
+            "d:\\unreal projects\\menusystem\\plugins\\multiplayersessions\\source\\multiplayersessions\\public\\multiplayersessions.h",
+            "d:\\unreal projects\\menusystem\\plugins\\multiplayersessions\\source\\multiplayersessions\\private\\multiplayersessionssubsystem.cpp",
+            "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesubsystem.h",
+            "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesubsystemmodule.h",
+            "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinesubsystem\\source\\public\\onlinesessionsettings.h",
+            "e:\\program files\\epic games\\ue_5.7\\engine\\plugins\\online\\onlinebase\\source\\public\\online\\onlinesessionnames.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
