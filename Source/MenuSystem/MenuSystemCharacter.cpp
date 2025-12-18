@@ -50,6 +50,7 @@ AMenuSystemCharacter::AMenuSystemCharacter():
 	GetCharacterMovement()->AirControl = 0.5f;
 
 	IOnlineSubsystem* OnlineSubsystem = IOnlineSubsystem::Get();
+	/**
 	if (OnlineSubsystem)
 	{
 		OnlineSessionInterface = OnlineSubsystem->GetSessionInterface();
@@ -58,7 +59,7 @@ AMenuSystemCharacter::AMenuSystemCharacter():
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 15.f, FColor::Green, FString::Printf(TEXT("Found Online Subsystem: %s"), *OnlineSubsystem->GetSubsystemName().ToString()));
 		}
-	}
+	}**/
 }
 
 void AMenuSystemCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -196,7 +197,7 @@ void AMenuSystemCharacter::OnCreateSessionComplete(FName SessionName, bool bWasS
 		UWorld* World = GetWorld();
 		if (World)
 		{
-			World->ServerTravel(FString("/Game/FirstPerson/Lobby?listen"));
+			World->ServerTravel(FString("/Game/FirstPerson/Maps/Lobby?listen"));
 		}
 	}
 	else

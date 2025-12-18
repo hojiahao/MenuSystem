@@ -78,7 +78,7 @@ void UMenu::OnCreateSession(bool bWasSuccessful)
 		UWorld* World = GetWorld();
 		if (World)
 		{
-			World->ServerTravel("/Game/FirstPerson/Lobby?listen");
+			World->ServerTravel("/Game/FirstPerson/Maps/Lobby?listen");
 		}
 	}
 	else
